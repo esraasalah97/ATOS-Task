@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.PhpTravelsSignUp">
+        <methods>
+          <include name="setUp"/>
+          <include name="signUp"/>
+          <include name="close"/>
+          <include name="assertLastName"/>
+          <include name="changeLanguage"/>
+          <include name="navigation"/>
+          <include name="assertText"/>
+          <include name="assertUrl"/>
+          <include name="assertFirstName"/>
+        </methods>
+      </class> <!-- tests.PhpTravelsSignUp -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

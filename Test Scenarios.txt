@@ -1,0 +1,16 @@
+Scenario 1: Test Happy Scenario all the given requirements satisfied
+Scenario 2: using the same firstName, lastName 
+Scenario 3: using the same data to signup twice
+scenario 4: using weak password 
+Scenario 5: try to add country code for phone number
+Scenario 6: using invalid email
+Scenario 7: using different passwords in the two fields password and confirm password
+also considering the cases that contradicts the given requirements.
+
+Missing Requirements:
+
+-Phone field Missing field length (it must has a limit), also missing countrycode
+-the two fields Password,confirm Password must be Identical
+-email must contain @ and must be a valid email
+-firstName, LastName must not contain special characters
+-the requirments given for the password generates weak password, it must include numbers also to form a strong password
