@@ -7,6 +7,7 @@ import java.util.List;
 
 import reader.ExcelReader;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 public class Testdata {
@@ -22,9 +23,10 @@ public class Testdata {
 			ExcelReader reader=new ExcelReader();
 			Sheet testdataSheet=reader.getSheet(fileName,sheetName);
 			    Iterator<Row> rowIterator = testdataSheet.rowIterator();
+			    DataFormatter formatter = new DataFormatter();
 			    while (rowIterator.hasNext()) {
 			    	Row row=rowIterator.next();
-			        testData.put(row.getCell(0).getStringCellValue(),row.getCell(1).getStringCellValue());
+			        testData.put(formatter.formatCellValue(row.getCell(0)),formatter.formatCellValue(row.getCell(1)));
 			    }
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

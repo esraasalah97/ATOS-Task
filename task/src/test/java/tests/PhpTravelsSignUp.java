@@ -42,25 +42,25 @@ public class PhpTravelsSignUp {
 
 
 	@BeforeClass
-	@Parameters("browser")
+	@Parameters({"browser"})
 	public void setUp(String browser) throws Exception {
 		// Check if parameter passed from TestNG is 'firefox'
 		if (browser.equalsIgnoreCase("firefox")) {
 			// create firefox instance
-			System.setProperty("webdriver.gecko.driver", "drivers//geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "src//test//java//resources.drivers//geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		// Check if parameter passed as 'chrome'
 		else if (browser.equalsIgnoreCase("chrome")) {
 			// set path to chromedriver.exe
-			System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src//test//java//resources.drivers//chromedriver.exe");
 			// create chrome instance
 			driver = new ChromeDriver();
 		}
 		// Check if parameter passed as 'Edge'
 		else if (browser.equalsIgnoreCase("ie")) {
 			// set path to Edge.exe
-			System.setProperty("webdriver.ie.driver", "drivers//IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "src//test//java//resources.drivers//IEDriverServer.exe");
 			// create Edge instance
 			driver = new InternetExplorerDriver();
 		} else {
@@ -98,7 +98,7 @@ public class PhpTravelsSignUp {
 	    signUp();
     }
 	@AfterMethod
-	@Parameters("changedURL")
+	@Parameters({"changedURL"})
 	public void assertUrl( String changedURL) {
 	result = ValidateField.validateUrl(driver, changedURL);
 	AssertJUnit.assertTrue(result);

@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="tests.PhpTravelsSignUp"/>
-    </classes>
-  </test> <!-- Test -->
    <listeners>
            <listener class-name="ListenerTest.ListenerTest"></listener>
        </listeners>
-       	<parameter name="changedURL"
-			value="https://www.phptravels.net/account/" />
-		<test thread-count="5" name="TestChrome">
+		<test  name="TestChrome">
 		<parameter name="browser" value="Chrome" />
+		<parameter name="changedURL"
+			value="https://www.phptravels.net/account/" />
 		<classes>
-			<class name="tests.NewTest">
+			<class name="tests.PhpTravelsSignUp">
 			</class>
 		</classes>
 	</test>
-	<test thread-count="5" name="Testie">
+	<test  name="Testie">
 		<parameter name="browser" value="ie" />
+		<parameter name="changedURL"
+			value="https://www.phptravels.net/account/" />
 		<classes>
-			<class name="tests.NewTest">
+			<class name="tests.PhpTravelsSignUp">
 			</class>
 		</classes>
 	</test>
-<test thread-count="5" name="Testfirefox">
+<test  name="Testfirefox">
 		<parameter name="browser" value="firefox" />
+		<parameter name="changedURL"
+			value="https://www.phptravels.net/account/" />
 		<classes>
-			<class name="tests.NewTest">
+			<class name="tests.PhpTravelsSignUp">
 			</class>
 		</classes>
 	</test>

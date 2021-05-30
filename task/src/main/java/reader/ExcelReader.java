@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelReader {
 	
 	  public  XSSFWorkbook getExcelFile(String fileName) throws IOException{
-		    InputStream inputStream = ExcelReader.class.getResourceAsStream("src/main/java/resources/"+fileName+".xlsx");
+		    InputStream inputStream = ExcelReader.class.getClassLoader().getResourceAsStream("./resources/"+fileName+".xlsx");
 		    return new XSSFWorkbook(inputStream);		    
             }
 	  public Sheet getSheet(String fileName,String sheetName) throws IOException {

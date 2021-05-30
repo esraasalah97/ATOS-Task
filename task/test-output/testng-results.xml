@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="5" ignored="0" total="6" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="266" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
+  <suite name="Default suite" duration-ms="212" started-at="2021-05-30T20:20:12Z" finished-at="2021-05-30T20:20:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="266" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
+    <test name="Default test" duration-ms="212" started-at="2021-05-30T20:20:12Z" finished-at="2021-05-30T20:20:12Z">
       <class name="tests.PhpTravelsSignUp">
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="setUp" is-config="true" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@6a8658ff]" name="setUp" is-config="true" duration-ms="0" started-at="2021-05-30T20:20:12Z" finished-at="2021-05-30T20:20:12Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml]]>
+in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-1180682946\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml
+in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-1180682946\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:290)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 at org.testng.internal.Parameters.createParameters(Parameters.java:620)
@@ -47,185 +47,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="assertFirstName(java.lang.String, java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="assertFirstName" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'xpath' is required by @Test on method assertFirstName but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'xpath' is required by @Test on method assertFirstName but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertFirstName -->
-        <test-method status="FAIL" signature="assertLastName(java.lang.String, java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="assertLastName" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'name' is required by @Test on method assertLastName but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'name' is required by @Test on method assertLastName but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertLastName -->
-        <test-method status="FAIL" signature="assertText(java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="assertText" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'text' is required by @Test on method assertText but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'text' is required by @Test on method assertText but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertText -->
-        <test-method status="FAIL" signature="assertUrl(java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="assertUrl" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'changedURL' is required by @Test on method assertUrl but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'changedURL' is required by @Test on method assertUrl but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertUrl -->
-        <test-method status="SKIP" signature="navigation(java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="navigation" is-config="true" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
+        <test-method status="SKIP" signature="navigation()[pri:0, instance:tests.PhpTravelsSignUp@6a8658ff]" name="navigation" is-config="true" duration-ms="0" started-at="2021-05-30T20:20:12Z" finished-at="2021-05-30T20:20:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigation -->
-        <test-method status="SKIP" signature="changeLanguage()[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="changeLanguage" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
+        <test-method status="SKIP" signature="fullScenario()[pri:0, instance:tests.PhpTravelsSignUp@6a8658ff]" name="fullScenario" duration-ms="0" started-at="2021-05-30T20:20:12Z" finished-at="2021-05-30T20:20:12Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml]]>
+in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-1180682946\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml
+in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-1180682946\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:290)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 at org.testng.internal.Parameters.createParameters(Parameters.java:620)
@@ -254,49 +90,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changeLanguage -->
-        <test-method status="FAIL" signature="signUp(java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="signUp" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'xpath' is required by @Test on method signUp but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'xpath' is required by @Test on method signUp but has not been marked @Optional or defined
-in C:\Users\Esraa\AppData\Local\Temp\testng-eclipse-174122691\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- fullScenario -->
+        <test-method status="SKIP" signature="assertUrl(java.lang.String)[pri:0, instance:tests.PhpTravelsSignUp@6a8658ff]" name="assertUrl" is-config="true" duration-ms="0" started-at="2021-05-30T20:20:12Z" finished-at="2021-05-30T20:20:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUp -->
-        <test-method status="SKIP" signature="close()[pri:0, instance:tests.PhpTravelsSignUp@d83da2e]" name="close" is-config="true" duration-ms="0" started-at="2021-05-29T11:54:57Z" finished-at="2021-05-29T11:54:57Z">
+        </test-method> <!-- assertUrl -->
+        <test-method status="SKIP" signature="close()[pri:0, instance:tests.PhpTravelsSignUp@6a8658ff]" name="close" is-config="true" duration-ms="0" started-at="2021-05-30T20:20:12Z" finished-at="2021-05-30T20:20:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

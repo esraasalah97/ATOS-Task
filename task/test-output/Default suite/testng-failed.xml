@@ -6,14 +6,10 @@
       <class name="tests.PhpTravelsSignUp">
         <methods>
           <include name="setUp"/>
-          <include name="signUp"/>
           <include name="close"/>
-          <include name="assertLastName"/>
-          <include name="changeLanguage"/>
+          <include name="fullScenario"/>
           <include name="navigation"/>
-          <include name="assertText"/>
           <include name="assertUrl"/>
-          <include name="assertFirstName"/>
         </methods>
       </class> <!-- tests.PhpTravelsSignUp -->
     </classes>
