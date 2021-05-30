@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="changedURL" value="https://www.phptravels.net/account/"/>
+  <listeners>
+    <listener class-name="ListenerTest.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="TestChrome(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.PhpTravelsSignUp">
         <methods>
@@ -13,5 +18,33 @@
         </methods>
       </class> <!-- tests.PhpTravelsSignUp -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TestChrome(failed) -->
+  <test thread-count="5" name="Testie(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="tests.PhpTravelsSignUp">
+        <methods>
+          <include name="setUp"/>
+          <include name="close"/>
+          <include name="fullScenario"/>
+          <include name="navigation"/>
+          <include name="assertUrl"/>
+        </methods>
+      </class> <!-- tests.PhpTravelsSignUp -->
+    </classes>
+  </test> <!-- Testie(failed) -->
+  <test thread-count="5" name="Testfirefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.PhpTravelsSignUp">
+        <methods>
+          <include name="setUp"/>
+          <include name="close"/>
+          <include name="fullScenario"/>
+          <include name="navigation"/>
+          <include name="assertUrl"/>
+        </methods>
+      </class> <!-- tests.PhpTravelsSignUp -->
+    </classes>
+  </test> <!-- Testfirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

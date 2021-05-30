@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+		<parameter name="changedURL" value="https://www.phptravels.net/account/" />
    <listeners>
            <listener class-name="ListenerTest.ListenerTest"></listener>
        </listeners>
 		<test  name="TestChrome">
-		<parameter name="browser" value="Chrome" />
-		<parameter name="changedURL"
-			value="https://www.phptravels.net/account/" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="tests.PhpTravelsSignUp">
 			</class>
@@ -15,8 +14,6 @@
 	</test>
 	<test  name="Testie">
 		<parameter name="browser" value="ie" />
-		<parameter name="changedURL"
-			value="https://www.phptravels.net/account/" />
 		<classes>
 			<class name="tests.PhpTravelsSignUp">
 			</class>
@@ -24,9 +21,7 @@
 	</test>
 <test  name="Testfirefox">
 		<parameter name="browser" value="firefox" />
-		<parameter name="changedURL"
-			value="https://www.phptravels.net/account/" />
-		<classes>
+			<classes>
 			<class name="tests.PhpTravelsSignUp">
 			</class>
 		</classes>

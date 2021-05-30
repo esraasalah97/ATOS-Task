@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="changedURL" value="https://www.phptravels.net/account/"/>
   <listeners>
     <listener class-name="ListenerTest.ListenerTest"/>
   </listeners>
   <test thread-count="5" name="TestChrome(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <parameter name="changedURL" value="https://www.phptravels.net/account/"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.PhpTravelsSignUp">
         <methods>
@@ -21,7 +21,6 @@
   </test> <!-- TestChrome(failed) -->
   <test thread-count="5" name="Testie(failed)">
     <parameter name="browser" value="ie"/>
-    <parameter name="changedURL" value="https://www.phptravels.net/account/"/>
     <classes>
       <class name="tests.PhpTravelsSignUp">
         <methods>
@@ -36,7 +35,6 @@
   </test> <!-- Testie(failed) -->
   <test thread-count="5" name="Testfirefox(failed)">
     <parameter name="browser" value="firefox"/>
-    <parameter name="changedURL" value="https://www.phptravels.net/account/"/>
     <classes>
       <class name="tests.PhpTravelsSignUp">
         <methods>
