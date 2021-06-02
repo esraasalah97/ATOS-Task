@@ -6,13 +6,10 @@ import org.openqa.selenium.WebDriver;
 public class ValidateField {
 	
 	public static boolean validateUrl(WebDriver driver,String url) {
-		return driver.getCurrentUrl().contains(url)? true:false;
+		return driver.getCurrentUrl().equals(url)? true:false;
 	}
-    public static boolean validateFirstName(String firstName) {
-    	return Character.isUpperCase(firstName.charAt(0))?true:false;
-    }
-    public static boolean validateLastName(String lastName) {
-    	return Character.isUpperCase(lastName.charAt(0));
+    public static boolean validateFirstLetterUpperCase(String str) {
+    	return Character.isUpperCase(str.charAt(0))?true:false;
     }
     public static boolean validatePassword(String password) {
     	return checkString(password);

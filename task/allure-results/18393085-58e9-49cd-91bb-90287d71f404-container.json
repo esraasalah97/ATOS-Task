@@ -1,0 +1,1 @@
+{"uuid":"18393085-58e9-49cd-91bb-90287d71f404","name":"tests.PhpTravelsSignUp","children":["28fc9aab-89f3-4fcc-8937-713463cec22f"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1622592164468,"stop":1622592166290}],"afters":[],"links":[],"start":1622592164453,"stop":1622592173287}

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-		<parameter name="changedURL" value="https://www.phptravels.net/account/" />
    <listeners>
            <listener class-name="ListenerTest.ListenerTest"></listener>
        </listeners>
